@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <title>Table view</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!--title-->
+      <h1>CRUD Operations in table</h1>
+      <!--search-bar-->
+      <div class="searchBar-Button">
+        <input
+          class="searchBar"
+          type="search"
+          onkeyup="filter()"
+          id="search"
+          placeholder="search here.."
+        />
+        <button class="btn-add" onclick="newData()">Add new</button>
+      </div>
+      <!--table-->
+      <div class="table">
+        <table id="table">
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+            <th>Edit/Delete</th>
+          </tr>
+          <tr>
+            <td>Ben</td>
+            <td>Cuddalore</td>
+            <td>9843216154</td>
+            <td>ben@gmail.com</td>
+            <td>
+              <button class="btn-edit" onclick="edit()">Edit</button>
+              <button class="btn-delete" onclick="del()">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Kevin</td>
+            <td>Chennai</td>
+            <td>7894515015</td>
+            <td>kevin@gmail.com</td>
+            <td>
+              <button class="btn-edit" onclick="edit()">Edit</button>
+              <button class="btn-delete" onclick="del()">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Gwen</td>
+            <td>Bangalore</td>
+            <td>8884510505</td>
+            <td>gwen@gmail.com</td>
+            <td>
+              <button class="btn-edit" onclick="edit()">Edit</button>
+              <button class="btn-delete" onclick="del()">Delete</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!--popup-->
+    <div class="popup" id="popup">
+      <div class="row-view">
+        <p>Name</p>
+        <input id="name" type="text" />
+      </div>
+      <div class="row-view">
+        <p>Address</p>
+        <input id="address" type="text" />
+      </div>
+      <div class="row-view">
+        <p>Mobile</p>
+        <input id="mobile" type="text" />
+      </div>
+      <div class="row-view">
+        <p>Email</p>
+        <input id="email" type="text" />
+      </div>
+      <div class="save-cancel">
+        <button class="btn-save" onclick="save()">Save</button>
+        <button class="btn-delete" onclick="cancel()">Cancel</button>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
