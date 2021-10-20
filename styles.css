@@ -24,7 +24,8 @@ body {
     width: 700px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 .searchBar, input {
     height: 30px;
@@ -32,6 +33,7 @@ body {
     font-size: 18px;
     border-radius: 5px;
     border:none;
+    margin-right: 130px;
 }
 .btn-add {
     height: 30px;
@@ -66,9 +68,8 @@ body {
     width: 850px;
 }
 .table table, th, td{
-    border: 1px solid black;
+    border: 3px solid black;
     border-collapse: collapse;
-    border-radius: 3px;
     height: 20px;
     width: 850px;
 }
@@ -94,7 +95,7 @@ td {
     margin-right: 10px;
 }
 p {
-    font-size: 20px;
+    font-size: 25px;
 }
 .save-cancel {
     display: flex;
